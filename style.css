@@ -1,0 +1,36 @@
+body{
+ margin: 0;
+ background-image:url("j&s.webp");
+ background-size: cover;
+ background-position: center;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ text-align: center;
+
+}
+
+.container{
+    background-color: rgb(236, 240, 241 ,0.5);
+    width: 750px;
+    margin: 120px auto;
+    padding: 40px;
+    border-radius: 25px;
+}
+
+h1{
+    color: #015e1e;
+    font-size: 42px;
+}
+
+p{
+ color:black;
+ font-size: 18px;
+}
+
+button{
+    background-color: #013819;
+    color: white;
+    font-size: 25px;
+    padding: 30px;
+    border-radius: 20px;
+    border: none;
+}
