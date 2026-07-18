@@ -1,15 +1,15 @@
 body{
  margin: 0;
- background-image:url("KASHMIR.jpg");
+ background-image:url("background.jpg");
  background-size: cover;
  background-position: center;
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-family: georgia, 'Times New Roman', Times, serif;
  text-align: center;
 
 }
 
 .container{
-    background-color: rgb(236, 240, 241 ,0.5);
+    background-color: rgb(236, 240, 241 ,0.3);
     width: 750px;
     margin: 120px auto;
     padding: 40px;
@@ -17,7 +17,7 @@ body{
 }
 
 h1{
-    color: #015e1e;
+    color: #034117;
     font-size: 42px;
 }
 
@@ -27,7 +27,7 @@ p{
 }
 
 button{
-    background-color: #013819;
+    background-color: #033f1e;
     color: white;
     font-size: 25px;
     padding: 30px;
