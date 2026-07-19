@@ -9,7 +9,7 @@ body{
 }
 
 .container{
-    background-color: rgb(236, 240, 241 ,0.3);
+    background-color: rgb(236, 240, 241 ,0.4);
     width: 750px;
     margin: 120px auto;
     padding: 40px;
@@ -17,7 +17,8 @@ body{
 }
 
 h1{
-    color: #034117;
+    color:#014d36;
+;
     font-size: 42px;
 }
 
@@ -27,10 +28,11 @@ p{
 }
 
 button{
-    background-color: #033f1e;
-    color: white;
-    font-size: 25px;
-    padding: 30px;
-    border-radius: 20px;
-    border: none;
+    background-color:#014d36;
+;
+    color: whitesmoke;
+    padding: 15px 35px;
+    font-size: 20px;
+    border-radius: 40px;
+    border:none;
 }
