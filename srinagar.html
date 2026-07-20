@@ -4,91 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Srinagar</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="srinagar.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-<section class="places">
+<div class="overlay">
 
-    <a href="place.html" class="back-btn">
-        <i class="fa-solid fa-arrow-left"></i> Back
-    </a>
+    <!-- Back Button -->
+    <a href="place.html" class="back-btn">← Back</a>
 
+    <!-- Heading -->
     <h1>Explore Srinagar</h1>
+
+    <div class="line"></div>
 
     <p class="subtitle">
         Discover the breathtaking beauty of Srinagar through its famous lakes,
         gardens, historical monuments and colourful landscapes.
     </p>
 
-    <div class="card-container">
+    <!-- Image Slider -->
 
-        <!-- Card 1 -->
-        <div class="card">
+    <div class="slider">
 
-            <img src="srinagar_img/dal-lake.jpg" alt="Dal Lake">
+        <button class="arrow left" onclick="prevSlide()">&#10094;</button>
 
-            <div class="content">
+        <div class="slider-container">
 
-                <h2>Dal Lake</h2>
+            <img src="srinagar_img/dal-lake.jpg" class="slide side" alt="Dal Lake">
 
-                <p>
-                    Dal Lake is Srinagar's most famous attraction, known for
-                    peaceful Shikara rides, floating markets and beautiful
-                    houseboats.
-                </p>
+            <img src="srinagar_img/pari-mahal.jpg" class="slide active" alt="Pari Mahal">
 
-            </div>
+            <img src="srinagar_img/tulip-garden.jpg" class="slide side" alt="Tulip Garden">
 
         </div>
 
-    
-        <!-- Card 2 -->
+        <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+
+    </div>
+
+    <!-- Dots -->
+
+    <div class="dots">
+
+        <span class="dot active-dot"></span>
+
+        <span class="dot"></span>
+
+        <span class="dot"></span>
+
+    </div>
+
+    <!-- Places -->
+
+    <div class="cards">
+
         <div class="card">
-
-            <img src="srinagar_img/pari-mahal.jpg" alt="Pari Mahal">
-
-            <div class="content">
-
-                <h2>Pari Mahal</h2>
-
-                <p>
-                    Explore the historic Palace of Fairies overlooking Dal Lake
-                    with breathtaking panoramic views of Srinagar.
-                </p>
-
-            </div>
-
+             <div class="icon">
+            <i class="fa-solid fa-water"></i>
+        </div>
+            <h2>Dal Lake</h2>
+            <div class="small-line"></div>
+            <p>
+                Dal Lake is Srinagar's most famous attraction,
+                known for peaceful Shikara rides, floating markets
+                and breathtaking mountain views.
+            </p>
         </div>
 
-        <!-- Card 3 -->
         <div class="card">
+             <div class="icon">
+            <i class="fa-solid fa-landmark"></i>
+        </div>
+            <h2>Pari Mahal</h2>
+            <div class="small-line"></div>
+            <p>
+                Pari Mahal is a historic Mughal garden overlooking
+                Dal Lake, offering spectacular panoramic views and
+                beautiful architecture.
+            </p>
+        </div>
 
-            <img src="srinagar_img/igmt.jpg" alt="Tulip Garden">
-
-            <div class="content">
-
-                <h2>Tulip Garden</h2>
-
-                <p>
-                    Asia's largest tulip garden blooms every spring with millions
-                    of colourful flowers creating a magical experience.
-                </p>
-
-            </div>
-
+        <div class="card">
+             <div class="icon">
+            <i class="fa-solid fa-seedling"></i>
+        </div>
+            <h2>Tulip Garden</h2>
+            <div class="small-line"></div>
+            <p>
+                Asia's largest tulip garden blooms every spring
+                with millions of colourful flowers, making it one
+                of Kashmir's most beautiful attractions.
+            </p>
         </div>
 
     </div>
 
-</section>
+</div>
+
+<script src="srinagar.js"></script>
 
 </body>
 </html>
