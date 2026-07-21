@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Pahalgam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="pahalgam.css">
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <!-- Back Button -->
+    <a href="place.html" class="back-btn">← Back</a>
+
+    <!-- Heading -->
+    <h1>Explore Pahalgam</h1>
+
+    <div class="line"></div>
+
+    <p class="subtitle">
+        Pahalgam is a picturesque hill station known for its stunning landscapes, ancient temples, and the famous Betaab River, making it a perfect destination for nature lovers and spiritual seekers.
+    </p>
+
+    <!-- Image Slider -->
+
+    <div class="slider">
+
+        <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+
+        <div class="slider-container">
+
+            
+
+            <img src="pahalgam_img/Lidder-Valley.avif" class="slide active" alt="Lidder Valley">
+
+            <img src="pahalgam_img/Mt.kolahoi.jpg" class="slide side" alt="Mt. Kolahoi">
+
+            <img src="pahalgam_img/Betaab Valley.jpg" class="slide side" alt="Betaab Valley">
+
+        </div>
+
+        <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+
+    </div>
+
+    <!-- Dots -->
+
+    <div class="dots">
+
+        <span class="dot active-dot"></span>
+
+        <span class="dot"></span>
+
+        <span class="dot"></span>
+
+    </div>
+
+    <!-- Places -->
+
+    <div class="cards">
+
+        <div class="card">
+             <div class="icon">
+            <i class="fa-solid fa-tree"></i>
+        </div>
+            <h2>Lidder Valley</h2>
+            <div class="small-line"></div>
+            <p>
+                Lidder Valley is a serene valley in Pahalgam, known for its crystal-clear rivers, dense forests, and breathtaking mountain vistas.
+            </p>
+        </div>
+
+        <div class="card">
+             <div class="icon">
+            <i class="fa-solid fa-mountain"></i>
+        </div>
+            <h2>Mt. Kolahoi</h2>
+            <div class="small-line"></div>
+            <p>
+                Mt. Kolahoi is a majestic mountain in Pahalgam, known for its snow-capped peaks, diverse wildlife, and challenging trekking routes.
+            </p>
+        </div>
+
+        <div class="card">
+             <div class="icon">
+            <i class="fa-solid fa-mountain"></i>
+        </div>
+            <h2>Betaab Valley</h2>
+            <div class="small-line"></div>
+            <p>
+                Betaab Valley is a scenic valley in Pahalgam, known for its lush greenery, pristine environment, and the famous Betaab River flowing through it.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="pahalgam.js"></script>
+
+</body>
+</html>
