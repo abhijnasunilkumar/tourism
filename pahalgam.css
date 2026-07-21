@@ -1,0 +1,262 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background:
+    linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+    url("pahalgam_img/background.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    color:white;
+}
+
+/* Main Container */
+
+.overlay{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    text-align:center;
+    padding:30px 0 50px;
+    position:relative;
+}
+
+/* Back Button */
+
+.back-btn{
+    position:absolute;
+    left:20px;
+    top:20px;
+
+    color:white;
+    text-decoration:none;
+    border:2px solid white;
+    border-radius:30px;
+    padding:10px 25px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:white;
+    color:#1d5e3a;
+}
+.icon{
+    background:transparent;
+    border:none;
+    box-shadow:none;
+}
+
+.icon i{
+    color:#8bc34a;
+    font-size:24px;
+}
+
+/* Heading */
+
+h1{
+    font-size:72px;
+    font-family:Georgia, serif;
+    margin-top:10px;
+}
+
+.line{
+    width:120px;
+    height:4px;
+    background:#8bc34a;
+    margin:15px auto 25px;
+    border-radius:20px;
+}
+
+.subtitle{
+    width:80%;
+    margin:auto;
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+/* ===================== */
+/* Slider */
+/* ===================== */
+
+.slider{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:40px auto;
+}
+
+/* Arrows */
+
+.arrow{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    border:none;
+    background:white;
+    color:#333;
+    font-size:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.arrow:hover{
+    background:#8bc34a;
+    color:white;
+}
+
+.left{
+    margin-right:15px;
+}
+
+.right{
+    margin-left:15px;
+}
+
+/* Images */
+
+.slider-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:0;
+}
+
+
+/* Side Images */
+.side{
+    width:290px;
+    height:260px;
+    object-fit:cover;
+    border-radius:18px;
+    opacity:0.85;
+}
+
+/* Center Image */
+.active{
+    width:340px;
+    height:300px;
+    object-fit:cover;
+    border-radius:18px;
+    border:2px solid white;
+
+    margin-left:-20px;
+    margin-right:-20px;
+    z-index:2;
+}
+/* Shadow */
+
+.slide{
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+}
+
+/* Dots */
+
+.dots{
+    margin:20px 0 50px;
+}
+
+.dot{
+    width:11px;
+    height:11px;
+    border-radius:50%;
+    display:inline-block;
+    background:#bdbdbd;
+    margin:0 5px;
+}
+
+.active-dot{
+    background:white;
+}
+
+/* ===================== */
+/* Cards */
+/* ===================== */
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:320px;
+}
+
+.card h2{
+    font-size:42px;
+    font-family:Georgia, serif;
+    margin-bottom:10px;
+}
+
+.small-line{
+    width:60px;
+    height:3px;
+    background:#8bc34a;
+    margin:10px auto 20px;
+}
+
+.card p{
+    font-size:18px;
+    line-height:1.8;
+    color:#f1f1f1;
+}
+
+/* Hover */
+
+.slide:hover{
+    transform:scale(1.03);
+}
+
+/* Mobile */
+
+@media(max-width:1000px){
+
+.slider{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:30px auto;
+}
+
+.slider-container{
+    flex-direction:column;
+}
+
+.side,
+.active{
+    width:90%;
+    height:280px;
+    margin:10px 0;
+}
+
+.cards{
+    flex-direction:column;
+    align-items:center;
+}
+
+h1{
+    font-size:48px;
+}
+
+.subtitle{
+    width:95%;
+    font-size:18px;
+}
+
+.back-btn{
+    position:static;
+    margin-bottom:20px;
+}
+}
