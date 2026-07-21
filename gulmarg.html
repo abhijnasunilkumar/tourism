@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Gulmarg</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="gulmarg.css">
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <!-- Back Button -->
+    <a href="place.html" class="back-btn">← Back</a>
+
+    <!-- Heading -->
+    <h1>Explore Gulmarg</h1>
+
+    <div class="line"></div>
+
+    <p class="subtitle">
+        Gulmarg is a breathtaking hill station famous for its snow-covered mountains, lush meadows, and the iconic Gondola ride, making it a paradise for nature lovers and adventure seekers.
+    </p>
+
+    <!-- Image Slider -->
+
+    <div class="slider">
+
+        <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+
+        <div class="slider-container">
+
+            <img src="gulmarg_img/apharwat-peak.jpg" class="slide side" alt="Apharwat Peak">
+
+            <img src="gulmarg_img/Gulmarg Gondola.jpg" class="slide active" alt="Gulmarg Gondola">
+
+            <img src="gulmarg_img/st.mary church.jpg" class="slide side" alt="St. Mary's Church">
+
+        </div>
+
+        <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+
+    </div>
+
+    <!-- Dots -->
+
+    <div class="dots">
+
+        <span class="dot active-dot"></span>
+
+        <span class="dot"></span>
+
+        <span class="dot"></span>
+
+    </div>
+
+    <!-- Places -->
+
+    <div class="cards">
+
+        <div class="card">
+             <div class="icon">
+            <i class="fa-solid fa-mountain"></i>
+        </div>
+            <h2>Apharwat Peak</h2>
+            <div class="small-line"></div>
+            <p>
+                Apharwat Peak is a breathtaking mountain near Gulmarg, known for its year-round snow, panoramic Himalayan views, and thrilling skiing adventures.
+            </p>
+        </div>
+
+        <div class="card">
+             <div class="icon">
+            <i class="fa-solid fa-cable-car"></i>
+        </div>
+            <h2>Gulmarg Gondola</h2>
+            <div class="small-line"></div>
+            <p>
+                The Gulmarg Gondola is an iconic cable car ride that takes visitors to the top of the mountain, offering stunning views of the surrounding snow-capped peaks and valleys.
+            </p>
+        </div>
+
+        <div class="card">
+             <div class="icon">
+            <i class="fa-solid fa-church"></i>
+        </div>
+            <h2>St. Mary's Church</h2>
+            <div class="small-line"></div>
+            <p>
+                St. Mary's Church is a historic church in Gulmarg, known for its beautiful architecture and serene atmosphere, offering a peaceful retreat for visitors.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="gulmarg.js"></script>
+
+</body>
+</html>
