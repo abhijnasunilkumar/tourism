@@ -6,7 +6,7 @@
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image:url("background.jpg");
+    background-image:url("place/background.jpg");
     background-size:cover;
     background-position:center;
 }
